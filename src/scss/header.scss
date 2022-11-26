@@ -1,13 +1,15 @@
 //====================================================================================================
 .header {
   position: fixed;
+  z-index: 5;
   top: 0;
   left: 0;
   width: 100%;
   @include adaptiveValue("padding-top", 60, 10);
   @include adaptiveValue("padding-bottom", 60, 10);
   &__container-big {
-    display: flex;
+    display: grid;
+    grid-template-columns: rem(300) 1fr rem(300);
     align-items: center;
     @media (max-width: $mobile) {
     }

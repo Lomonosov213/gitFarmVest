@@ -2,12 +2,20 @@
 
 .main-block {
   &__container {
+    position: relative;
   }
 
   &__content {
+    padding-top: rem(250);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   &__title {
+    max-width: 823px;
   }
 
   &__text {

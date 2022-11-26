@@ -6,10 +6,9 @@
 // title ========================================================================================================================================================
 
 .title {
-  font-weight: 700;
+  font-weight: 600;
   font-size: rem(70);
-  line-height: math.div(70, 78);
-  line-height: 78px;
+  line-height: math.div(68, 70);
   color: #ffffff;
   span {
     color: $greenColor;

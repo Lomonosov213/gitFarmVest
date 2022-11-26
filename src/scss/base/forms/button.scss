@@ -2,15 +2,22 @@
 // Сніппет (HTML): btn
 
 .button {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 126px;
+  min-width: rem(126);
+  padding: rem(21) rem(0);
+  // display: inline-block;
   font-family: lato;
   font-weight: 500;
-  line-height: math.div(22, 18);
-  padding: rem(21) rem(25);
+  // line-height: math.div(22, 18);
+  //padding: rem(21) rem(25);
   background-color: #23b123;
   border-radius: rem(10);
   transition: all 0.3s ease 0s;
-  white-space: nowrap;
+  // white-space: nowrap;
+
   @media (any-hover: hover) {
     cursor: pointer;
     &:hover {
