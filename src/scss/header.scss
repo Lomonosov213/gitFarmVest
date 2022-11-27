@@ -11,7 +11,8 @@
     display: grid;
     grid-template-columns: rem(300) 1fr rem(300);
     align-items: center;
-    @media (max-width: $mobile) {
+    @media (max-width: em(1080)) {
+      grid-template-columns: auto 1fr auto;
     }
   }
 
@@ -23,6 +24,21 @@
 
     img {
       max-width: 100%;
+    }
+    &::after,
+    &::before {
+      content: "";
+      pointer-events: none;
+      position: absolute;
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      border: 1px solid rgb(255, 255, 255);
+      @include adaptiveValue("width", 585, 350);
+      @include adaptiveValue("height", 585, 350);
+    }
+    &::before {
+      transform: translate(calc(-50% + (28px)), -50%);
     }
   }
 

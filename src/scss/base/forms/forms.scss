@@ -30,6 +30,10 @@
         color: red;
       }
     }
+    @media (max-width: em(410)) {
+      padding-top: rem(10);
+      padding-bottom: rem(10);
+    }
   }
   &__button {
   }
@@ -41,6 +45,9 @@
     color: red;
     font-size: rem(16);
     transform: translate(50%, 50%);
+  }
+  @media (max-width: em(410)) {
+    flex-direction: column;
   }
 }
 //</FORM>
