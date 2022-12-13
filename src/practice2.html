@@ -24,16 +24,25 @@
       src="https://youtu.be/y8Yv4pnO7qc"
       frameborder="0"
     ></iframe>
-    <form action="#" id="form">
-      <input type="text" id="email" />
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
       <input
         autocomplete="off"
-        type="text"
-        name="form[]"
+        type="email"
+        name="email"
         data-error="Помилка"
         placeholder="gpum"
         class="input"
+        id="email"
       />
+      <input
+        autocomplete="off"
+        type="submit"
+        name="form[]"
+        data-error="Помилка"
+        placeholder=""
+        class="input"
+      />
+      <button type="submit" class="button">Надіслати</button>
     </form>
   </body>
 </html>
