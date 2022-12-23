@@ -88,15 +88,19 @@ flsForms.formFieldsInit({
 });
 
 // trining ========================================================================================================================================================
-// Variable declarations
+
 var studlyCapVar = 10;
 var properCamelCase = "string";
 var titleCaseOver = 9000;
 
-// Variable assignments
 studlyCapVar = 10;
 properCamelCase = "A String";
 titleCaseOver = 9000;
+
+/////////////////////////
+let catName = "Oliver";
+let catSound = "Meow!";
+//////////////////////////
 
 //========================================================================================================================================================
 
