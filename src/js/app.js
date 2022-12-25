@@ -158,6 +158,12 @@ const someAdjective = "cool";
 let myStr = "Learning to code is ";
 myStr += someAdjective;
 //////////
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Change this line
+///////////
 
 // Only change code below this line
 const myDecimal = 5.7;
