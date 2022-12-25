@@ -108,7 +108,17 @@ console.log(FCC, fact); // Change this line
 /////////////////////////////////////
 const product = 8 * 10;
 const quotient = 66 / 33;
+const product = 2.0 * 2.5;
+const quotient = 4.4 / 2.0; // Change this line
+////////////////////////////////////
+let myVar = 87;
+// Only change code below this line
+myVar++;
+//////////////////
+const ourDecimal = 5.7;
 
+// Only change code below this line
+const myDecimal = 5.7;
 //========================================================================================================================================================
 
 /* Надсилання форми */
