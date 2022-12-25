@@ -164,6 +164,9 @@ const lastName = "Lovelace";
 // Only change code below this line
 const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Change this line
 ///////////
+const myArray = [50, 60, 70];
+let myData = myArray[0];
+/////////////
 
 // Only change code below this line
 const myDecimal = 5.7;
