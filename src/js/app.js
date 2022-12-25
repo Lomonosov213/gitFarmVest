@@ -142,8 +142,11 @@ let c = 4.6;
 
 // Only change code below this line
 a *= 5;
-b *= b;
+b *= 3;
 c *= 10;
+////////////
+const myStr = 'I am a "double quoted" string inside "double quotes".'; // Change this line
+//////////
 
 // Only change code below this line
 const myDecimal = 5.7;
