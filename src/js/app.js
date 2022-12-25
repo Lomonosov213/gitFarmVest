@@ -147,6 +147,17 @@ c *= 10;
 ////////////
 const myStr = 'I am a "double quoted" string inside "double quotes".'; // Change this line
 //////////
+const myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+///////////
+const myStr = "FirstLine\n\t\\SecondLine\nThirdLine"; // Change this line
+/////////////
+let myStr = "This is the first sentence. ";
+myStr += "This is the second sentence.";
+////////////
+const someAdjective = "cool";
+let myStr = "Learning to code is ";
+myStr += someAdjective;
+//////////
 
 // Only change code below this line
 const myDecimal = 5.7;
