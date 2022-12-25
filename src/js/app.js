@@ -110,6 +110,7 @@ const product = 8 * 10;
 const quotient = 66 / 33;
 const product = 2.0 * 2.5;
 const quotient = 4.4 / 2.0; // Change this line
+const remainder = (9 % 2) + 1;
 ////////////////////////////////////
 let myVar = 87;
 // Only change code below this line
