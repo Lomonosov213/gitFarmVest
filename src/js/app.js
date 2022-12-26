@@ -189,6 +189,15 @@ const myArray = [
   ["John", 23],
   ["cat", 2],
 ];
+////////////
+const myList = [
+  ["bla bla", 7],
+  ["sdf", 5],
+  ["sdf", 5],
+  ["sdf", 5],
+  ["sdf", 5],
+];
+/////////////
 const removedFromMyArray = myArray.pop();
 ///////////
 const myArray = [
@@ -199,6 +208,12 @@ const removedFromMyArray = myArray.shift();
 //////////
 // Only change code below this line
 const myDecimal = 5.7;
+//////////
+function reusableFunction() {
+  console.log("Hi World");
+}
+reusableFunction();
+//////////
 //========================================================================================================================================================
 
 /* Надсилання форми */
