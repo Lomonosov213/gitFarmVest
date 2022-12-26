@@ -318,7 +318,48 @@ testGreaterThan(100);
 testGreaterThan(101);
 testGreaterThan(150);
 ////////////////
+function testGreaterOrEqual(val) {
+  if (val >= 20) {
+    // Change this line
+    return "20 or Over";
+  }
 
+  if (val >= 10) {
+    // Change this line
+    return "10 or Over";
+  }
+
+  return "Less than 10";
+}
+
+testGreaterOrEqual(10);
+testGreaterOrEqual(9);
+testGreaterOrEqual(0);
+testGreaterOrEqual(11);
+testGreaterOrEqual(19);
+testGreaterOrEqual(100);
+testGreaterOrEqual(21);
+///////////////
+function testLogicalAnd(val) {
+  // Only change code below this line
+
+  if (val <= 50 && val >= 25) {
+    return "Yes";
+  }
+
+  // Only change code above this line
+  return "No";
+}
+
+testLogicalAnd(0);
+testLogicalAnd(24);
+testLogicalAnd(25);
+testLogicalAnd(30);
+testLogicalAnd(50);
+testLogicalAnd(51);
+testLogicalAnd(75);
+testLogicalAnd(80);
+/////////////////////
 //========================================================================================================================================================
 
 /* Надсилання форми */
