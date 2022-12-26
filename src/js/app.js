@@ -214,6 +214,18 @@ function reusableFunction() {
 }
 reusableFunction();
 //////////
+function functionWithArgs(par1, par2) {
+  console.log(par1 + par2);
+}
+functionWithArgs(5, 3);
+////////
+function timesFive(num) {
+  return num * 5;
+}
+timesFive(5);
+timesFive(2);
+timesFive(0);
+/////////////
 //========================================================================================================================================================
 
 /* Надсилання форми */
