@@ -277,6 +277,14 @@ console.log(nextInLine([2], 1));
 console.log(nextInLine([5, 6, 7, 8, 9], 1));
 console.log("After: " + JSON.stringify(testArr));
 //////////
+function trueOrFalse(wasThatTrue) {
+  // Only change code below this line
+  if (wasThatTrue) {
+    return "Yes, that was true";
+  }
+  return "No, that was false";
+}
+/////////
 
 //========================================================================================================================================================
 
