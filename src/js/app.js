@@ -621,6 +621,18 @@ const testObj = {
 // Only change code below this line
 const entreeValue = testObj["an entree"]; // Change this line
 const drinkValue = testObj["the drink"]; // Change this line
+////////////////
+// Setup
+const myDog = {
+  name: "Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
+};
+
+// Only change code below this line
+myDog.name = "Happy Coder";
+//////////////////
 
 //========================================================================================================================================================
 
