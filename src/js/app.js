@@ -679,6 +679,29 @@ function checkObj(checkProp) {
 
 // Test your code by modifying these values
 checkObj("gift");
+//////////////////////////////////////////
+function checkObj(obj, checkProp) {
+  // Only change code below this line
+  return "Change Me!";
+  // Only change code above this line
+}
+
+// Setup
+var myObj = {
+  gift: "pony",
+  pet: "kitten",
+  bed: "sleigh",
+};
+
+function checkObj(obj, checkProp) {
+  // Your Code Here
+  if (obj.hasOwnProperty(checkProp)) return obj[checkProp]; // If true return the prop
+
+  return "Not Found";
+}
+
+// Test your code by modifying these values
+checkObj("gift");
 
 //========================================================================================================================================================
 
