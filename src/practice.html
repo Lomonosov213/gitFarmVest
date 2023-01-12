@@ -21,7 +21,14 @@
     <li>other cats</li>
   </ol>
   <form action="https://www.freecatphotoapp.com/submit-cat-photo">
-    <input type="text" placeholder="cat photo URL" />
+    <label for="indoor">
+      <input id="indoor" type="radio" name="indoor-outdoor" />Indoor1
+    </label>
+    <label for="indoor">
+      <input id="outdoor" type="radio" name="indoor-outdoor" />outdoor
+    </label>
+
+    <input type="text" placeholder="cat photo URL" required />
     <button type="submit">Submit</button>
   </form>
 </main>
