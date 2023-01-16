@@ -1,4 +1,7 @@
-let a = 95;
-let b = 79;
-const result = a + b;
-console.log(result);
+//let a = 95;
+let a;
+let firstName;
+let lastName;
+let b = "BObi";
+const result = a ?? firstName ?? lastName ?? b;
+console.log("answer =" + result);
