@@ -1,13 +1,8 @@
-//let a = 95;
-let a;
-let firstName;
-let lastName;
-let b = "BObi";
-const result = a ?? firstName ?? lastName ?? b;
-console.log("answer =" + result);
-
-let i = 3;
-
-while (i) {
-  console.log(i--);
+function checkAge(age) {
+  if (age > 18) {
+    return true;
+  } else {
+    return "Родители разрешили?";
+  }
 }
+console.log(checkAge(19));
