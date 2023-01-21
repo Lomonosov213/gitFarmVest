@@ -74,3 +74,19 @@ function pow(x, n) {
 }
 
 console.log(pow(2, 0));
+//////////
+
+var F = "1565";
+function separate(a) {
+  let numlengthcontrol = toString(a).length;
+  if (numlengthcontrol > 1) {
+    let result = Array.from(a);
+    for (let i = 1; numlengthcontrol > 1; i++) {
+      result[i++];
+    }
+    return result;
+  }
+}
+
+console.log("LENTH F = " + F.length);
+console.log("answer is " + separate(1651));
