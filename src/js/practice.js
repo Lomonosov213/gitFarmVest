@@ -75,7 +75,16 @@ function pow(x, n) {
 
 console.log(pow(2, 0));
 //////////
-
+let pow2 = (x, n) => {
+  if (n >= 1) {
+    let result = x ** n;
+    return result;
+  }
+  return "Введите натуральное число!";
+};
+console.log("Strelka = " + pow2(7, 1));
+///////////////////
+/*
 var F = "1565";
 function separate(a) {
   let numlengthcontrol = toString(a).length;
@@ -90,3 +99,4 @@ function separate(a) {
 
 console.log("LENTH F = " + F.length);
 console.log("answer is " + separate(1651));
+*/
