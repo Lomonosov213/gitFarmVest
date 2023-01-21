@@ -48,7 +48,7 @@ function convertToRoman(num) {
 }
 
 convertToRoman(36);
-
+///////////////////
 let a;
 let b;
 
@@ -64,3 +64,13 @@ function minValue(a, b) {
 console.log(minValue(2, 5));
 console.log(minValue(3, -1));
 console.log(minValue(1, 1));
+//////////////////////
+function pow(x, n) {
+  if (n >= 1) {
+    let result = x ** n;
+    return result;
+  }
+  return "Введите натуральное число!";
+}
+
+console.log(pow(2, 0));
