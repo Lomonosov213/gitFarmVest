@@ -84,7 +84,7 @@ let pow2 = (x, n) => {
 };
 console.log("Strelka = " + pow2(7, 1));
 ///////////////////
-/*
+
 var F = "1565";
 function separate(a) {
   let numlengthcontrol = toString(a).length;
@@ -99,4 +99,3 @@ function separate(a) {
 
 console.log("LENTH F = " + F.length);
 console.log("answer is " + separate(1651));
-*/
