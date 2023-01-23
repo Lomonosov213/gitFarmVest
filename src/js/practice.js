@@ -98,12 +98,10 @@ function separate(a) {
 }
 
 console.log("LENTH F = " + F.length);
-console.log("answer is " + separate(1651));
+//console.log("answer is " + separate(1651));
 ////////////////////////
-function chetworker() {
-  for (let i = 0; i <= 10; i++) {
-    let chet = i % 2;
-    return chet;
+for (let i = 2; i <= 10; i++) {
+  if (i % 2 == 0) {
+    console.log("answer is " + i);
   }
 }
-console.log(chetworker());
