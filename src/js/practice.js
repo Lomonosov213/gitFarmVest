@@ -99,3 +99,11 @@ function separate(a) {
 
 console.log("LENTH F = " + F.length);
 console.log("answer is " + separate(1651));
+////////////////////////
+function chetworker() {
+  for (let i = 0; i <= 10; i++) {
+    let chet = i % 2;
+    return chet;
+  }
+}
+console.log(chetworker());
