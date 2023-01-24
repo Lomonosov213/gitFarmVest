@@ -107,10 +107,17 @@ for (let i = 2; i <= 10; i++) {
 }
 ///////////
 for (let i = 0; i < 3; i++) {
-  console.log(`number ${i}!`);
+  console.log(`number for ${i}!`);
 }
 let i = 0;
 while (i < 3) {
   console.log(`number while ${i}!`);
   i++;
+}
+///////////////
+let m = 10;
+for (let n = 0; n < 10; n++) {
+  if (n > 1 && m % n == 0) {
+    console.log(n);
+  }
 }
