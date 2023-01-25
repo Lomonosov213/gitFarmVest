@@ -125,3 +125,16 @@ nextPrime: for (let i = 2; i <= m; i++) {
 }
 
 let g = 10;
+/*two summ*/
+let arr = [];
+function twoSumm(arr, target) {
+  for (i = 0; i < arr.length; i++) {
+    for (j = i + 1; j < arr.length; j++) {
+      if (arr[j] == target - arr[i]) {
+        return new arrNew[(i, j)]();
+      }
+    }
+  }
+}
+
+twoSumm([3, 2, 4], 6);
