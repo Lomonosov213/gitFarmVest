@@ -116,8 +116,12 @@ while (i < 3) {
 }
 ///////////////
 let m = 10;
-for (let n = 0; n < 10; n++) {
-  if (n > 1 && m % n == 0) {
-    console.log(n);
+nextPrime: for (let i = 2; i <= m; i++) {
+  for (let j = 2; j < i; j++) {
+    if (i % j == 0) continue nextPrime;
   }
+
+  console.log(i);
 }
+
+let g = 10;
