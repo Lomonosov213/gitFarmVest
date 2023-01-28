@@ -159,3 +159,13 @@ nextPrime: for (let i = 2; i <= n; i++) {
 
   alert(i); // простое число
 }
+/////////////////////
+while (true) {
+  let i = prompt("Введите число больше 100", 0);
+  if (i >= 100 || i === null) {
+    alert("GOOD");
+    break;
+  } else {
+    alert("Введите еще раз");
+  }
+}
