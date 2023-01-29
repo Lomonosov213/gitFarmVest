@@ -169,3 +169,9 @@ while (true) {
     alert("Введите еще раз");
   }
 }
+///////////
+let i = 0;
+while (i < 3) {
+  alert(`number ${i}!`);
+  i++;
+}
