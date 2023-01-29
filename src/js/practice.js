@@ -175,3 +175,9 @@ while (i < 3) {
   alert(`number ${i}!`);
   i++;
 }
+/////////
+let num;
+
+do {
+  num = prompt("Введите число больше 100?", 0);
+} while (num <= 100 && num);
