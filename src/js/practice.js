@@ -191,3 +191,7 @@ for (let i = 2; i <= 10; i++) {
 for (let i = 0; i < 3; i++) {
   alert(`number ${i}!`);
 }
+///////////
+function checkAge(age) {
+  return age > 18 || confirm("Родители разрешили?");
+}
