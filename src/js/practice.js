@@ -195,3 +195,11 @@ for (let i = 0; i < 3; i++) {
 function checkAge(age) {
   return age > 18 || confirm("Родители разрешили?");
 }
+/////////
+function min(a, b) {
+  if (a < b) {
+    return a;
+  } else {
+    return b;
+  }
+}
