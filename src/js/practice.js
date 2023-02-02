@@ -222,19 +222,3 @@ if (n < 1) {
 } else {
   alert(pow(x, n));
 }
-/////////////
-function min(a, b) {
-  if (a < b) {
-    return a;
-  } else {
-    return b;
-  }
-}
-////////////////////
-function min(a, b) {
-  if (a < b) {
-    return a;
-  } else {
-    return b;
-  }
-}
