@@ -3,3 +3,4 @@ function doNothing() {
 }
 
 alert(doNothing() === undefined); // true
+////////
