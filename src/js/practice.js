@@ -32,3 +32,12 @@ function isPrime(n) {
 function имя(параметры, через, запятую) {
   /* тело, код функции */
 }
+//////////////////////
+function checkAge(age) {
+  if (age > 18) {
+    return true;
+  } else {
+    // ...
+    return confirm("Родители разрешили?");
+  }
+}
