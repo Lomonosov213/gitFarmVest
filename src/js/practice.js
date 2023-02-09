@@ -41,3 +41,11 @@ function checkAge(age) {
     return confirm("Родители разрешили?");
   }
 }
+///////////////////
+function min(a, b) {
+  if (a < b) {
+    return a;
+  } else {
+    return b;
+  }
+}
