@@ -101,3 +101,11 @@ if (n < 1) {
 } else {
   alert(pow(x, n));
 }
+////////////
+function showMessage(from, text) {
+  if (text === undefined) {
+    text = "текст не добавлен";
+  }
+
+  alert(from + ": " + text);
+}
