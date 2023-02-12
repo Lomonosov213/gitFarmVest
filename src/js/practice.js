@@ -109,3 +109,13 @@ function showMessage(from, text) {
 
   alert(from + ": " + text);
 }
+////////
+function showMessage(text) {
+  // ...
+  if (text === undefined) {
+    // если параметр отсутствует
+    text = "пустое сообщение";
+  }
+  alert(text);
+}
+showMessage(); // пустое сообщение
