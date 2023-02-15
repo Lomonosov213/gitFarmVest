@@ -149,7 +149,16 @@ let arr = new PowerArray(1, 2, 5, 10, 50);
 alert(arr.isEmpty()); // false
 
 // filter создаст новый массив, используя arr.constructor[Symbol.species] как конструктор
-let filteredArr = arr.filter(item => item >= 10);
+let filteredArr = arr.filter((item) => item >= 10);
 
 // filteredArr не является PowerArray, это Array
 alert(filteredArr.isEmpty()); // Error: filteredArr.isEmpty is not a function
+///////////////
+class Animal {
+  static [Symbol.hasInstance](obj) {
+    if (obj.canEat) return true;
+  }
+}
+
+let obj = { canEat: true };
+alert(obj instanceof Animal); // true: вызван Animal[Symbol.hasInstance](obj)
