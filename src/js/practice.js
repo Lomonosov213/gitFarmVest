@@ -162,3 +162,12 @@ class Animal {
 
 let obj = { canEat: true };
 alert(obj instanceof Animal); // true: вызван Animal[Symbol.hasInstance](obj)
+//////////
+function Rabbit() {}
+let rabbit = new Rabbit();
+
+// заменяем прототип
+Rabbit.prototype = {};
+
+// ...больше не rabbit!
+alert(rabbit instanceof Rabbit); // false
