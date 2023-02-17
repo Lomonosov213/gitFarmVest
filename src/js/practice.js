@@ -222,3 +222,12 @@ setTimeout(function () {
     alert("ошибка поймана!");
   }
 }, 1000);
+////////////
+let json = '{ "age": 30 }'; // данные неполны
+
+try {
+  let user = JSON.parse(json); // <-- выполнится без ошибок
+  alert(user.name); // нет свойства name!
+} catch (e) {
+  alert("не выполнится");
+}
