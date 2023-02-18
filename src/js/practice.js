@@ -231,3 +231,10 @@ try {
 } catch (e) {
   alert("не выполнится");
 }
+///////////////////
+try {
+  JSON.parse("{ bad json o_O }");
+} catch (e) {
+  alert(e.name); // SyntaxError
+  alert(e.message); // Unexpected token b in JSON at position 2
+}
