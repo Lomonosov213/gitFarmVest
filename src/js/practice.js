@@ -32,11 +32,9 @@ function readData() {
   let json = '{ "age": 30 }';
 
   try {
-   
     blabla(); // ошибка!
   } catch (e) {
-   
-    if (e.name != 'SyntaxError') {
+    if (e.name != "SyntaxError") {
       throw e; // проброс исключения (не знаю как это обработать)
     }
   }
@@ -45,5 +43,14 @@ function readData() {
 try {
   readData();
 } catch (e) {
-  alert( "Внешний catch поймал: " + e ); // поймал!
+  alert("Внешний catch поймал: " + e); // поймал!
+}
+//////////////////
+try {
+  alert("try");
+  if (confirm("Сгенерировать ошибку?")) BAD_CODE();
+} catch (e) {
+  alert("catch");
+} finally {
+  alert("finally");
 }
