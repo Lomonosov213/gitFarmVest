@@ -79,3 +79,15 @@ try {
 alert(result || "возникла ошибка");
 
 alert(`Выполнение заняло ${diff}ms`);
+////////////
+function func() {
+  try {
+    return 1;
+  } catch (e) {
+    /* ... */
+  } finally {
+    alert("finally");
+  }
+}
+
+alert(func());
