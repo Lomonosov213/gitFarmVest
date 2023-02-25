@@ -42,3 +42,22 @@ try {
     throw err; // неизвестная ошибка, повторно выбросит исключение
   }
 }
+///////
+class MyError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = this.constructor.name;
+  }
+}
+
+class ValidationError extends MyError {}
+
+class PropertyRequiredError extends ValidationError {
+  constructor(property) {
+    super("Нет свойства: " + property);
+    this.property = property;
+  }
+}
+
+// name корректное
+alert(new PropertyRequiredError("field").name);
