@@ -211,3 +211,16 @@ async function loadJson(url) {
 }
 
 loadJson("no-such-user.json").catch(alert); // Error: 404 (4)
+//////////////////////////
+async function wait() {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+
+  return 10;
+}
+
+function f() {
+  // покажет 10 через 1 секунду
+  wait().then((result) => alert(result));
+}
+
+f();
