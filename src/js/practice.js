@@ -316,3 +316,17 @@ let generator = gen();
 let question = generator.next().value;
 
 generator.throw(new Error("Ответ не найден в моей базе данных")); // (2)
+/////////////
+function* generate() {
+  let result = yield "2 + 2 = ?"; // Ошибка в этой строке
+}
+
+let generator = generate();
+
+let question = generator.next().value;
+
+try {
+  generator.throw(new Error("Ответ не найден в моей базе данных"));
+} catch (e) {
+  alert(e); // покажет ошибку
+}
