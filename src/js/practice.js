@@ -228,7 +228,7 @@ f();
 class HttpError extends Error {
   constructor(response) {
     super(`${response.status} for ${response.url}`);
-    this.name = 'HttpError';
+    this.name = "HttpError";
     this.response = response;
   }
 }
@@ -244,15 +244,14 @@ async function loadJson(url) {
 
 // Запрашивать логин, пока github не вернёт существующего пользователя.
 async function demoGithubUser() {
-
   let user;
-  while(true) {
+  while (true) {
     let name = prompt("Введите логин?", "iliakan");
 
     try {
       user = await loadJson(`https://api.github.com/users/${name}`);
       break; // ошибок не было, выходим из цикла
-    } catch(err) {
+    } catch (err) {
       if (err instanceof HttpError && err.response.status == 404) {
         // после alert начнётся новая итерация цикла
         alert("Такого пользователя не существует, пожалуйста, повторите ввод.");
@@ -263,7 +262,6 @@ async function demoGithubUser() {
     }
   }
 
-
   alert(`Полное имя: ${user.name}.`);
   return user;
 }
@@ -271,14 +269,14 @@ async function demoGithubUser() {
 demoGithubUser();
 ////////////////
 async function wait() {
-  await new Promise(resolve => setTimeout(resolve, 1000));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
 
   return 10;
 }
 
 function f() {
   // покажет 10 через 1 секунду
-  wait().then(result => alert(result));
+  wait().then((result) => alert(result));
 }
 
 f();
@@ -288,16 +286,33 @@ function* gen() {
 
   alert(ask1); // 4
 
-  let ask2 = yield "3 * 3 = ?"
+  let ask2 = yield "3 * 3 = ?";
 
   alert(ask2); // 9
 }
 
 let generator = gen();
 
-alert( generator.next().value ); // "2 + 2 = ?"
+alert(generator.next().value); // "2 + 2 = ?"
 
-alert( generator.next(4).value ); // "3 * 3 = ?"
+alert(generator.next(4).value); // "3 * 3 = ?"
 
-alert( generator.next(9).done );
+alert(generator.next(9).done);
 ///////////////
+function* gen() {
+  try {
+    let result = yield "2 + 2 = ?"; // (1)
+
+    alert(
+      "Выполнение программы не дойдёт до этой строки, потому что выше возникнет исключение"
+    );
+  } catch (e) {
+    alert(e); // покажет ошибку
+  }
+}
+
+let generator = gen();
+
+let question = generator.next().value;
+
+generator.throw(new Error("Ответ не найден в моей базе данных")); // (2)
