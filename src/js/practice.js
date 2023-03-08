@@ -311,9 +311,9 @@ function* gen() {
   }
 }
 
-let generator = gen();
+let generatorsss = gen();
 
-let question = generator.next().value;
+let questionss = generator.next().value;
 
 generator.throw(new Error("Ответ не найден в моей базе данных")); // (2)
 /////////////
@@ -321,9 +321,9 @@ function* generate() {
   let result = yield "2 + 2 = ?"; // Ошибка в этой строке
 }
 
-let generator = generate();
+let generators = generate();
 
-let question = generator.next().value;
+let questions = generator.next().value;
 
 try {
   generator.throw(new Error("Ответ не найден в моей базе данных"));
@@ -340,8 +340,9 @@ function* pseudoRandom(seed) {
   }
 }
 
-let generator = pseudoRandom(1);
+let generatorss = pseudoRandom(1);
 
 alert(generator.next().value); // 16807
 alert(generator.next().value); // 282475249
 alert(generator.next().value); // 1622650073
+///////////////
