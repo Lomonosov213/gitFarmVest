@@ -396,10 +396,24 @@ export class User {
 function makeUser() {
   return {
     name: "John",
-    ref: this
+    ref: this,
   };
 }
 
 let user = makeUser();
 
-alert( user.ref.name );
+alert(user.ref.name);
+//////////////
+let ladder = {
+  step: 0,
+  up() {
+    this.step++;
+  },
+  down() {
+    this.step--;
+  },
+  showStep: function () {
+    // показывает текущую ступеньку
+    alert(this.step);
+  },
+};
