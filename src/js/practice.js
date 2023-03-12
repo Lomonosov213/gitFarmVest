@@ -418,7 +418,7 @@ let ladder = {
   },
 };
 //////////
-let ladder = {
+let ladders = {
   step: 0,
   up() {
     this.step++;
@@ -462,6 +462,6 @@ function makeUser() {
   };
 }
 
-let user = makeUser();
+let users = makeUser();
 
 alert(user.ref.name);
