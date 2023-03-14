@@ -400,7 +400,7 @@ function makeUser() {
   };
 }
 
-let user = makeUser();
+let userss = makeUser();
 
 alert(user.ref.name);
 //////////////
@@ -487,3 +487,24 @@ function B() {
 }
 
 alert(new A() == new B());
+//////////
+function Calculator() {
+  this.read = function () {
+    this.a = +prompt("a?", 0);
+    this.b = +prompt("b?", 0);
+  };
+
+  this.sum = function () {
+    return this.a + this.b;
+  };
+
+  this.mul = function () {
+    return this.a * this.b;
+  };
+}
+
+let calculators = new Calculator();
+calculator.read();
+
+alert("Sum=" + calculator.sum());
+alert("Mul=" + calculator.mul());
