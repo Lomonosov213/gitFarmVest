@@ -607,3 +607,19 @@ function multiplyNumeric(obj) {
     }
   }
 }
+/////////
+let user = {
+  name: "John",
+  sizes: {
+    height: 182,
+    width: 50,
+  },
+};
+
+let clone = Object.assign({}, user);
+
+alert(user.sizes === clone.sizes); // true, тот же объект
+
+// user и clone обладают общим свойством sizes
+user.sizes.width++; // изменяем свойства в первом объекте
+alert(clone.sizes.width);
