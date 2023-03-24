@@ -26,3 +26,14 @@ let ladder = {
 };
 
 ladder.up().up().down().showStep().down().showStep();
+///////////////
+let obj = {};
+
+function A() {
+  return obj;
+}
+function B() {
+  return obj;
+}
+
+alert(new A() == new B()); // true
