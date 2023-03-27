@@ -62,6 +62,25 @@ let user = {
 };
 
 // демонстрация результатов преобразований:
-alert(user); // hint: string -> {name: "John"}
-alert(+user); // hint: number -> 1000
+alert(user3); // hint: string -> {name: "John"}
+alert(+user3); // hint: number -> 1000
 alert(user + 500); // hint: default -> 1500
+/////////////
+let user2 = {
+  name: "John",
+  money: 1000,
+
+  // для хинта равного "string"
+  toString() {
+    return `{name: "${this.name}"}`;
+  },
+
+  // для хинта равного "number" или "default"
+  valueOf() {
+    return this.money;
+  },
+};
+
+alert(user2); // toString -> {name: "John"}
+alert(+user2); // valueOf -> 1000
+alert(user2 + 500); // valueOf -> 1500
