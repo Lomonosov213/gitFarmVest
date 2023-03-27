@@ -5,7 +5,7 @@ function makeUser() {
   };
 }
 
-let user = makeUser();
+let user1 = makeUser();
 
 alert(user.ref.name);
 ///////////////
@@ -64,7 +64,7 @@ let user = {
 // демонстрация результатов преобразований:
 alert(user3); // hint: string -> {name: "John"}
 alert(+user3); // hint: number -> 1000
-alert(user + 500); // hint: default -> 1500
+alert(user3 + 500); // hint: default -> 1500
 /////////////
 let user2 = {
   name: "John",
