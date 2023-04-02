@@ -68,3 +68,20 @@ alert(formatDate(new Date(new Date() - 5 * 60 * 1000))); // "5 мин. наза�
 
 // вчерашняя дата вроде 31.12.2016, 20:00
 alert(formatDate(new Date(new Date() - 86400 * 1000)));
+////////////////////
+function makeCounter() {
+  let count = 0;
+
+  return function () {
+    return count++;
+  };
+}
+
+let counter = makeCounter();
+let counter2 = makeCounter();
+
+alert(counter()); // 0
+alert(counter()); // 1
+
+alert(counter2()); // ?
+alert(counter2());
