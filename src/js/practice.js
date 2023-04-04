@@ -103,3 +103,12 @@ let counter = new Counter();
 alert(counter.up()); // 1
 alert(counter.up()); // 2
 alert(counter.down()); // 1
+/////////////
+function sum(a) {
+  return function (b) {
+    return a + b; // берёт "a" из внешнего лексического окружения
+  };
+}
+
+alert(sum(1)(2)); // 3
+alert(sum(5)(-1)); // 4
