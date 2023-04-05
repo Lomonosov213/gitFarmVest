@@ -112,3 +112,16 @@ function sum(a) {
 
 alert(sum(1)(2)); // 3
 alert(sum(5)(-1)); // 4
+/////////
+let sayHi = function func(who) {
+  if (who) {
+    alert(`Hello, ${who}`);
+  } else {
+    func("Guest"); // использует func, чтобы снова вызвать себя же
+  }
+};
+
+sayHi(); // Hello, Guest
+
+// А вот так - не cработает:
+func();
