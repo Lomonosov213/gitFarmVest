@@ -97,3 +97,11 @@ function throttle(func, ms) {
 
   return wrapper;
 }
+/////////////
+function f() {
+  alert(this.name);
+}
+
+f = f.bind({ name: "Вася" }).bind({ name: "Петя" });
+
+f();
