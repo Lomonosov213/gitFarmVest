@@ -139,3 +139,17 @@ function f(a, b) {
 }
 
 f.defer(1000)(1, 2);
+//////////////////
+function Rabbit(name) {
+  this.name = name;
+}
+Rabbit.prototype.sayHi = function () {
+  alert(this.name);
+};
+
+let rabbit = new Rabbit("Rabbit");
+
+rabbit.sayHi(); // Rabbit
+Rabbit.prototype.sayHi(); // undefined
+Object.getPrototypeOf(rabbit).sayHi(); // undefined
+rabbit.__proto__.sayHi();
