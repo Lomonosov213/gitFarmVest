@@ -153,3 +153,14 @@ rabbit.sayHi(); // Rabbit
 Rabbit.prototype.sayHi(); // undefined
 Object.getPrototypeOf(rabbit).sayHi(); // undefined
 rabbit.__proto__.sayHi();
+////////////////
+class Rabbit extends Object {
+  constructor(name) {
+    super(); // надо вызвать конструктор родителя, когда наследуемся
+    this.name = name;
+  }
+}
+
+let rabbits = new Rabbit("Кроль");
+
+alert(rabbits.hasOwnProperty("name")); // true
